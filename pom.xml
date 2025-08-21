@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.ecommerce</groupId>
     <artifactId>sb-ecom</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>v1.0.0-SNAPSHOT</version>
     <name>sb-ecom</name>
     <description>sb-ecom</description>
     <url/>
@@ -125,6 +125,7 @@
                 </configuration>
             </plugin>
         </plugins>
+        <finalName>sb-ecom</finalName>
     </build>
 
 </project>
