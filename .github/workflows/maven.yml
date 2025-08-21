@@ -2,8 +2,8 @@ name: CI - Build & Push Docker
 
 on:
   push:
-    tags:
-      - 'v*.*.*'
+    branches:
+      - main
 
 jobs:
   build-and-push:
@@ -47,7 +47,7 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/spring-boot-ecommerce-app:${{ env.VERSION }}
+            ${{ secrets.DOCKER_USERNAME }}/spring-boot-ecommerce-app:v1.0.6
           build-args: |
             # none for now
           cache-from: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/spring-boot-ecommerce-app:buildcache
