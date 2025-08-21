@@ -1,0 +1,3 @@
+-- -- V3__Add_unique_constraint_to_product_name.sql
+-- ALTER TABLE products
+-- ADD CONSTRAINT unique_product_name UNIQUE (product_name);
